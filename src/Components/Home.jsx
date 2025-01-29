@@ -1,8 +1,86 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import ClipboardJS from "clipboard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
+import Slider from "react-slick";
 import "./css/style.css";
+import "./css/responsive.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const Home = () => {
+  useEffect(() => {
+    const isDarkMode = localStorage.getItem("darkMode") === "true";
+    document.body.classList.toggle("dark-theme", isDarkMode);
+    const pageContent = document.querySelector("#page-content");
+    if (pageContent) {
+      pageContent.style.display = "block";
+    }
+
+    const themeControlBtn = document.querySelector(".theme-control-btn");
+    themeControlBtn?.addEventListener("click", () => {
+      document.body.classList.toggle("dark-theme");
+      localStorage.setItem(
+        "darkMode",
+        document.body.classList.contains("dark-theme")
+      );
+    });
+
+    const mobileMenuControlBar = document.querySelector(
+      ".mobile-menu-control-bar"
+    );
+    mobileMenuControlBar?.addEventListener("click", () => {
+      document.querySelector(".mobile-menu-overlay")?.classList.add("show");
+      document.querySelector(".navbar-main")?.classList.add("show");
+    });
+
+    const mobileMenuOverlay = document.querySelector(".mobile-menu-overlay");
+    mobileMenuOverlay?.addEventListener("click", () => {
+      mobileMenuOverlay.classList.remove("show");
+      document.querySelector(".navbar-main")?.classList.remove("show");
+    });
+
+    document.querySelectorAll(".move-with-cursor").forEach((elem) => {
+      document.addEventListener("mousemove", (e) => {
+        const x = e.clientX * 0.01;
+        const y = e.clientY * 0.01;
+        elem.style.transition =
+          "transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)";
+        elem.style.transform = `translate(${x}px, ${y}px) rotate(${x + y}deg)`;
+      });
+    });
+
+    new ClipboardJS(".btn-copy");
+    document.querySelectorAll(".btn-copy").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        btn.classList.add("active");
+        setTimeout(() => btn.classList.remove("active"), 1000);
+      });
+    });
+  }, []);
+
+  const sliderSettings = {
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: false,
+    dots: false,
+    infinite: true,
+    arrows: true,
+    speed: 500,
+    prevArrow: <i className="fas left icon fa-arrow-left"></i>,
+    nextArrow: <i className="fas right icon fa-arrow-right"></i>,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 1, slidesToScroll: 1 },
+      },
+    ],
+  };
+
   return (
-    <div className="home">
+    <div className="home" id="page-content">
       <header className="header-area">
         <nav className="navbar">
           <div className="container">
@@ -48,10 +126,10 @@ const Home = () => {
                 </div>
                 <ul className="navbar-info mx-auto">
                   <li className="nav-item">
-                    <a
-                      className="nav-link"
+                    <Link
+                      to="/"
+                      className="nav-link active"
                       aria-current="page"
-                      href="index.html"
                     >
                       <svg
                         className="nav-icon"
@@ -74,10 +152,10 @@ const Home = () => {
                       </svg>
 
                       <span>Home</span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link active" href="about.html">
+                    <Link to="/about" className="nav-link">
                       <svg
                         className="nav-icon"
                         viewBox="0 0 18 18"
@@ -104,10 +182,10 @@ const Home = () => {
                         />
                       </svg>
                       About
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="services.html">
+                    <Link to="/services" className="nav-link">
                       <svg
                         className="nav-icon"
                         viewBox="0 0 16 16"
@@ -134,10 +212,10 @@ const Home = () => {
                         />
                       </svg>
                       Services
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="portfolio.html">
+                    <Link className="nav-link" to="/work">
                       <svg
                         className="nav-icon"
                         viewBox="0 0 18 17"
@@ -164,10 +242,10 @@ const Home = () => {
                         />
                       </svg>
                       Works
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="blog.html">
+                    <Link to="/blog" className="nav-link">
                       <svg
                         className="nav-icon"
                         viewBox="0 0 17 16"
@@ -188,10 +266,10 @@ const Home = () => {
                         />
                       </svg>
                       Blog
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="contact.html">
+                    <Link to="/contact" className="nav-link">
                       <svg
                         className="nav-icon"
                         viewBox="0 0 18 17"
@@ -218,7 +296,7 @@ const Home = () => {
                         />
                       </svg>
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <div className="header-right-info d-flex align-items-center">
@@ -321,7 +399,7 @@ const Home = () => {
               <div className="mobile-menu-overlay d-block d-lg-none"></div>
               <div className="mobile-menu-control-bar d-block d-xl-none">
                 <button className="mobile-menu-control-bar">
-                  <i className="fas fa-bars"></i>
+                  <FontAwesomeIcon icon={faBars} />
                 </button>
               </div>
             </div>
