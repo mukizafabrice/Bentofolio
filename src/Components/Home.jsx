@@ -462,7 +462,7 @@ const Home = () => {
                         </a>
                         <button
                           className="btn btn-copy"
-                          data-clipboard-text="example@example.com"
+                          data-clipboard-text="mukizafabrice18@gmail.com"
                         >
                           <svg
                             className="icon"
@@ -1041,6 +1041,8 @@ const Home = () => {
           </div>
         </div>
       </main>
+      {/* footer */}
+      <Footer />
     </div>
   );
 };

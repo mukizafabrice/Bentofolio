@@ -402,6 +402,7 @@ const Home = () => {
           </div>
         </nav>
       </header>
+      <Footer />
     </div>
   );
 };

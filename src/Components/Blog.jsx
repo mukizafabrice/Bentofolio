@@ -401,6 +401,7 @@ const Home = () => {
             </div>
           </div>
         </nav>
+        <Footer />
       </header>
     </div>
   );

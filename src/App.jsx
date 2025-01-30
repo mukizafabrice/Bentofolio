@@ -8,6 +8,9 @@ import Services from "./Components/Services";
 import Contact from "./Components/Contact";
 import Work from "./Components/Work";
 import Blog from "./Components/Blog";
+import Footer from "./Components/Footer";
+import Portfolio from "./Components/Portfolio ";
+import PortfolioDetails from "./Components/PortfolioDetails";
 
 function App() {
   return (
@@ -19,6 +22,11 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/work" element={<Work />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/footer" element={<Footer />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio-details" element={<PortfolioDetails />} />
+
+
       </Routes>
     </BrowserRouter>
   );
