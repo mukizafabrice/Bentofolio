@@ -1042,7 +1042,7 @@ const Home = () => {
         </div>
       </main>
       {/* footer */}
-      <Footer />
+      <footer />
     </div>
   );
 };
