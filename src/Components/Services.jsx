@@ -10,7 +10,7 @@ import "./css/responsive.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Home = () => {
+const Services = () => {
   useEffect(() => {
     const isDarkMode = localStorage.getItem("darkMode") === "true";
     document.body.classList.toggle("dark-theme", isDarkMode);
@@ -402,9 +402,1039 @@ const Home = () => {
           </div>
         </nav>
       </header>
-      <Footer />
+      {/* <!-- main area part start --> */}
+      <main>
+        <section className="content-box-area mt-4">
+          <div className="container">
+            <div className="row g-4">
+              <div className="col-xl-4">
+                <div className="card profile-card">
+                  <div className="card-body">
+                    <div className="image text-center">
+                      <img src="assets/img/images/profile.png" alt="profile" />
+                    </div>
+                    <div className="text">
+                      <h3 className="card-title">Cris Rayaan 👋</h3>
+                      <p>
+                        A Passionate <span>Full Stack Developer</span> 🖥️ &{" "}
+                        <span>Product Designer</span> having
+                        <span>12 years</span> of Experiences over 24+ Country
+                        Worldwide.
+                      </p>
+                      <div className="common-button-groups">
+                        <a className="btn btn-call" href="#">
+                          <svg
+                            className="icon"
+                            width="25"
+                            height="24"
+                            viewBox="0 0 25 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.5 4H9.5L11.5 9L9 10.5C10.071 12.6715 11.8285 14.429 14 15.5L15.5 13L20.5 15V19C20.5 19.5304 20.2893 20.0391 19.9142 20.4142C19.5391 20.7893 19.0304 21 18.5 21C14.5993 20.763 10.9202 19.1065 8.15683 16.3432C5.3935 13.5798 3.73705 9.90074 3.5 6C3.5 5.46957 3.71071 4.96086 4.08579 4.58579C4.46086 4.21071 4.96957 4 5.5 4Z"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.5 7C16.0304 7 16.5391 7.21071 16.9142 7.58579C17.2893 7.96086 17.5 8.46957 17.5 9"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.5 3C17.0913 3 18.6174 3.63214 19.7426 4.75736C20.8679 5.88258 21.5 7.4087 21.5 9"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          Book A call
+                        </a>
+                        <button
+                          className="btn btn-copy"
+                          data-clipboard-text="mukizafabrice18@.com"
+                        >
+                          <svg
+                            className="icon"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8 10C8 9.46957 8.21071 8.96086 8.58579 8.58579C8.96086 8.21071 9.46957 8 10 8H18C18.5304 8 19.0391 8.21071 19.4142 8.58579C19.7893 8.96086 20 9.46957 20 10V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H10C9.46957 20 8.96086 19.7893 8.58579 19.4142C8.21071 19.0391 8 18.5304 8 18V10Z"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M16 8V6C16 5.46957 15.7893 4.96086 15.4142 4.58579C15.0391 4.21071 14.5304 4 14 4H6C5.46957 4 4.96086 4.21071 4.58579 4.58579C4.21071 4.96086 4 5.46957 4 6V14C4 14.5304 4.21071 15.0391 4.58579 15.4142C4.96086 15.7893 5.46957 16 6 16H8"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          Copy Email
+                        </button>
+                      </div>
+                      <div className="social-media-icon">
+                        <ul className="list-unstyled">
+                          <li>
+                            <a href="#">
+                              <i className="fab fa-facebook"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i className="fab fa-pinterest"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i className="fab fa-github"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i className="fab fa-youtube"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-8">
+                <div className="card content-box-card">
+                  <div className="card-body">
+                    <div className="top-info">
+                      <div className="text">
+                        <h1 className="main-title">
+                          Services I <span>Offered</span>
+                        </h1>
+                        <p>
+                          Transforming Ideas into Innovative Reality, Elevate
+                          Your Vision with Our Expert{" "}
+                          <b>Product Design and Development</b> Services!
+                        </p>
+                      </div>
+                      <div className="available-btn">
+                        <span>
+                          <i className="fas fa-circle"></i> Available For Hire
+                        </span>
+                      </div>
+                    </div>
+                    <div className="services">
+                      <div className="row g-4">
+                        <div className="col-md-3 col-sm-6 col-6">
+                          <div className="services-item text-center">
+                            <div className="image">
+                              <img
+                                src="assets/img/icons/ui-ux.svg"
+                                alt="ui-ux"
+                              />
+                            </div>
+                            <div className="text">
+                              <h3 className="title">UI UX Design</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-3 col-sm-6 col-6">
+                          <div className="services-item text-center">
+                            <div className="image">
+                              <img src="assets/img/icons/app.svg" alt="app" />
+                            </div>
+                            <div className="text">
+                              <h3 className="title">Mobile App</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-3 col-sm-6 col-6">
+                          <div className="services-item text-center">
+                            <div className="image">
+                              <img
+                                src="assets/img/icons/prd-design.svg"
+                                alt="prd-design"
+                              />
+                            </div>
+                            <div className="text">
+                              <h3 className="title">Product Design</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-3 col-sm-6 col-6">
+                          <div className="services-item text-center">
+                            <div className="image">
+                              <img
+                                src="assets/img/icons/branding.svg"
+                                alt="branding"
+                              />
+                            </div>
+                            <div className="text">
+                              <h3 className="title">Branding</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-3 col-sm-6 col-6">
+                          <div className="services-item text-center">
+                            <div className="image">
+                              <img
+                                src="assets/img/icons/camera.svg"
+                                alt="camera"
+                              />
+                            </div>
+                            <div className="text">
+                              <h3 className="title">Photography</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-3 col-sm-6 col-6">
+                          <div className="services-item text-center">
+                            <div className="image">
+                              <img
+                                src="assets/img/icons/youtube.svg"
+                                alt="youtube"
+                              />
+                            </div>
+                            <div className="text">
+                              <h3 className="title">Motion Design</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-3 col-sm-6 col-6">
+                          <div className="services-item text-center">
+                            <div className="image">
+                              <img
+                                src="assets/img/icons/web-development.svg"
+                                alt="web-development"
+                              />
+                            </div>
+                            <div className="text">
+                              <h3 className="title">Web Development</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-3 col-sm-6 col-6">
+                          <div className="services-item text-center">
+                            <div className="image">
+                              <img src="assets/img/icons/view.svg" alt="view" />
+                            </div>
+                            <div className="text">
+                              <h3 className="title">Visualization</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="block-image">
+                        <img
+                          src="assets/img/blog/blog-img-1.jpg"
+                          alt="blog-img-1"
+                          className="img-fluid w-100"
+                        />
+                      </div>
+                    </div>
+                    <div className="working-with-area">
+                      <h2 className="main-common-title">
+                        Working With 50+ Brands ✨ Worldwide
+                      </h2>
+                      <div className="working-with-main">
+                        <div className="items">
+                          <img src="assets/img/icons/notion.svg" alt="notion" />
+                        </div>
+                        <div className="items">
+                          <img
+                            src="assets/img/icons/webflow.svg"
+                            alt="webflow"
+                          />
+                        </div>
+                        <div className="items">
+                          <img src="assets/img/icons/mico.svg" alt="mico" />
+                        </div>
+                        <div className="items">
+                          <img src="assets/img/icons/framer.svg" alt="framer" />
+                        </div>
+                        <div className="items">
+                          <img src="assets/img/icons/zeplin.svg" alt="zeplin" />
+                        </div>
+                        <div className="items">
+                          <img src="assets/img/icons/figma.svg" alt="figma" />
+                        </div>
+                        <div className="items">
+                          <img src="assets/img/icons/notion.svg" alt="notion" />
+                        </div>
+                        <div className="items">
+                          <img
+                            src="assets/img/icons/webflow.svg"
+                            alt="webflow"
+                          />
+                        </div>
+                        <div className="items">
+                          <img src="assets/img/icons/mico.svg" alt="mico" />
+                        </div>
+                        <div className="items">
+                          <img src="assets/img/icons/framer.svg" alt="framer" />
+                        </div>
+                        <div className="items">
+                          <img src="assets/img/icons/zeplin.svg" alt="zeplin" />
+                        </div>
+                        <div className="items">
+                          <img src="assets/img/icons/figma.svg" alt="figma" />
+                        </div>
+                        <div className="items">
+                          <img src="assets/img/icons/notion.svg" alt="notion" />
+                        </div>
+                        <div className="items">
+                          <img
+                            src="assets/img/icons/webflow.svg"
+                            alt="webflow"
+                          />
+                        </div>
+                        <div className="items">
+                          <img src="assets/img/icons/mico.svg" alt="mico" />
+                        </div>
+                        <div className="items">
+                          <img src="assets/img/icons/framer.svg" alt="framer" />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="client-feedback">
+                      <h2 className="main-common-title">
+                        Trusted By 1200+ Clients
+                      </h2>
+                      <div className="row client-feedback-slider">
+                        <div className="col-lg-6">
+                          <div className="feedback-item">
+                            <div className="feedback-top-info">
+                              <div className="rating">
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                              </div>
+                              <div className="website">
+                                <a href="#">
+                                  Framer.com
+                                  <svg
+                                    className="arrow-up"
+                                    width="14"
+                                    height="15"
+                                    viewBox="0 0 14 15"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M9.91634 4.5835L4.08301 10.4168"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                    <path
+                                      d="M4.66699 4.5835H9.91699V9.8335"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                  </svg>
+                                </a>
+                              </div>
+                            </div>
+                            <div className="details">
+                              <p>
+                                "We've been using BentoFolio for over a year
+                                now, and I must say, it's been a game-changer
+                                for us. The user interface is intuitive and the
+                                feature.
+                              </p>
+                            </div>
+                            <div className="designation">
+                              <p>
+                                <span>Oliver Clain</span> - Product Designer
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-lg-6">
+                          <div className="feedback-item">
+                            <div className="feedback-top-info">
+                              <div className="rating">
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                              </div>
+                              <div className="website">
+                                <a href="#">
+                                  Framer.com
+                                  <svg
+                                    className="arrow-up"
+                                    width="14"
+                                    height="15"
+                                    viewBox="0 0 14 15"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M9.91634 4.5835L4.08301 10.4168"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                    <path
+                                      d="M4.66699 4.5835H9.91699V9.8335"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                  </svg>
+                                </a>
+                              </div>
+                            </div>
+                            <div className="details">
+                              <p>
+                                "We've been using BentoFolio for over a year
+                                now, and I must say, it's been a game-changer
+                                for us. The user interface is intuitive and the
+                                feature.
+                              </p>
+                            </div>
+                            <div className="designation">
+                              <p>
+                                <span>Oliver Clain</span> - Product Designer
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-lg-6">
+                          <div className="feedback-item">
+                            <div className="feedback-top-info">
+                              <div className="rating">
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                              </div>
+                              <div className="website">
+                                <a href="#">
+                                  Framer.com
+                                  <svg
+                                    className="arrow-up"
+                                    width="14"
+                                    height="15"
+                                    viewBox="0 0 14 15"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M9.91634 4.5835L4.08301 10.4168"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                    <path
+                                      d="M4.66699 4.5835H9.91699V9.8335"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                  </svg>
+                                </a>
+                              </div>
+                            </div>
+                            <div className="details">
+                              <p>
+                                "We've been using BentoFolio for over a year
+                                now, and I must say, it's been a game-changer
+                                for us. The user interface is intuitive and the
+                                feature.
+                              </p>
+                            </div>
+                            <div className="designation">
+                              <p>
+                                <span>Oliver Clain</span> - Product Designer
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="awards-recognitions">
+                      <h2 className="main-common-title">
+                        Awards and Recognitions
+                      </h2>
+                      <div className="awards-recognitions-main">
+                        <ul className="list-unstyled">
+                          <li>
+                            <a href="#" className="d-block w-100">
+                              <div className="awards-item">
+                                <div className="award-name">
+                                  <div className="icon">
+                                    <img
+                                      src="assets/img/icons/adobe.svg"
+                                      alt="adobe"
+                                    />
+                                  </div>
+                                  <div className="text">
+                                    <h4 className="title">
+                                      Adobe Design Contest
+                                    </h4>
+                                    <p className="year">2022 - 2023</p>
+                                  </div>
+                                </div>
+                                <div className="winner-tag">
+                                  <h4 className="title">
+                                    <svg
+                                      className="icon"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M6 9C6 10.5913 6.63214 12.1174 7.75736 13.2426C8.88258 14.3679 10.4087 15 12 15C13.5913 15 15.1174 14.3679 16.2426 13.2426C17.3679 12.1174 18 10.5913 18 9C18 7.4087 17.3679 5.88258 16.2426 4.75736C15.1174 3.63214 13.5913 3 12 3C10.4087 3 8.88258 3.63214 7.75736 4.75736C6.63214 5.88258 6 7.4087 6 9Z"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M12 15L15.4 20.89L16.998 17.657L20.596 17.889L17.196 12"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M6.80234 12L3.40234 17.89L7.00034 17.657L8.59834 20.889L11.9983 15"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                    </svg>
+                                    Runner Up
+                                  </h4>
+                                </div>
+                                <div className="project-btn">
+                                  <span>
+                                    View Project
+                                    <svg
+                                      className="arrow-up"
+                                      width="14"
+                                      height="15"
+                                      viewBox="0 0 14 15"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M9.91634 4.5835L4.08301 10.4168"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M4.66699 4.5835H9.91699V9.8335"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                    </svg>
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" className="d-block w-100">
+                              <div className="awards-item">
+                                <div className="award-name">
+                                  <div className="icon">
+                                    <img
+                                      src="assets/img/icons/dribbble.svg"
+                                      alt="dribbble"
+                                    />
+                                  </div>
+                                  <div className="text">
+                                    <h4 className="title">
+                                      Dribbble Design Contest
+                                    </h4>
+                                    <p className="year">2022 - 2023</p>
+                                  </div>
+                                </div>
+                                <div className="winner-tag">
+                                  <h4 className="title">
+                                    <svg
+                                      className="icon"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M6 9C6 10.5913 6.63214 12.1174 7.75736 13.2426C8.88258 14.3679 10.4087 15 12 15C13.5913 15 15.1174 14.3679 16.2426 13.2426C17.3679 12.1174 18 10.5913 18 9C18 7.4087 17.3679 5.88258 16.2426 4.75736C15.1174 3.63214 13.5913 3 12 3C10.4087 3 8.88258 3.63214 7.75736 4.75736C6.63214 5.88258 6 7.4087 6 9Z"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M12 15L15.4 20.89L16.998 17.657L20.596 17.889L17.196 12"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M6.80234 12L3.40234 17.89L7.00034 17.657L8.59834 20.889L11.9983 15"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                    </svg>
+                                    Gold Winner
+                                  </h4>
+                                </div>
+                                <div className="project-btn">
+                                  <span>
+                                    View Project
+                                    <svg
+                                      className="arrow-up"
+                                      width="14"
+                                      height="15"
+                                      viewBox="0 0 14 15"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M9.91634 4.5835L4.08301 10.4168"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M4.66699 4.5835H9.91699V9.8335"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                    </svg>
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" className="d-block w-100">
+                              <div className="awards-item">
+                                <div className="award-name">
+                                  <div className="icon">
+                                    <img
+                                      src="assets/img/icons/awwwards.png"
+                                      alt="awwwards"
+                                    />
+                                  </div>
+                                  <div className="text">
+                                    <h4 className="title">Awwwards Nominee</h4>
+                                    <p className="year">2022 - 2023</p>
+                                  </div>
+                                </div>
+                                <div className="winner-tag">
+                                  <h4 className="title">
+                                    <svg
+                                      className="icon"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M6 9C6 10.5913 6.63214 12.1174 7.75736 13.2426C8.88258 14.3679 10.4087 15 12 15C13.5913 15 15.1174 14.3679 16.2426 13.2426C17.3679 12.1174 18 10.5913 18 9C18 7.4087 17.3679 5.88258 16.2426 4.75736C15.1174 3.63214 13.5913 3 12 3C10.4087 3 8.88258 3.63214 7.75736 4.75736C6.63214 5.88258 6 7.4087 6 9Z"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M12 15L15.4 20.89L16.998 17.657L20.596 17.889L17.196 12"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M6.80234 12L3.40234 17.89L7.00034 17.657L8.59834 20.889L11.9983 15"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                    </svg>
+                                    Runner Up
+                                  </h4>
+                                </div>
+                                <div className="project-btn">
+                                  <span>
+                                    View Project
+                                    <svg
+                                      className="arrow-up"
+                                      width="14"
+                                      height="15"
+                                      viewBox="0 0 14 15"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M9.91634 4.5835L4.08301 10.4168"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M4.66699 4.5835H9.91699V9.8335"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                    </svg>
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" className="d-block w-100">
+                              <div className="awards-item">
+                                <div className="award-name">
+                                  <div className="icon">
+                                    <img
+                                      src="assets/img/icons/behance.svg"
+                                      alt="behance"
+                                    />
+                                  </div>
+                                  <div className="text">
+                                    <h4 className="title">
+                                      Behance Design Contest
+                                    </h4>
+                                    <p className="year">2022 - 2023</p>
+                                  </div>
+                                </div>
+                                <div className="winner-tag">
+                                  <h4 className="title">
+                                    <svg
+                                      className="icon"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M6 9C6 10.5913 6.63214 12.1174 7.75736 13.2426C8.88258 14.3679 10.4087 15 12 15C13.5913 15 15.1174 14.3679 16.2426 13.2426C17.3679 12.1174 18 10.5913 18 9C18 7.4087 17.3679 5.88258 16.2426 4.75736C15.1174 3.63214 13.5913 3 12 3C10.4087 3 8.88258 3.63214 7.75736 4.75736C6.63214 5.88258 6 7.4087 6 9Z"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M12 15L15.4 20.89L16.998 17.657L20.596 17.889L17.196 12"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M6.80234 12L3.40234 17.89L7.00034 17.657L8.59834 20.889L11.9983 15"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                    </svg>
+                                    Gold Winner
+                                  </h4>
+                                </div>
+                                <div className="project-btn">
+                                  <span>
+                                    View Project
+                                    <svg
+                                      className="arrow-up"
+                                      width="14"
+                                      height="15"
+                                      viewBox="0 0 14 15"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M9.91634 4.5835L4.08301 10.4168"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M4.66699 4.5835H9.91699V9.8335"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                    </svg>
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="frequently-asked-questions">
+                      <h2 className="main-common-title">
+                        Frequently Asked Questions
+                      </h2>
+                      <div className="frequently-asked-questions-main">
+                        <div className="accordion" id="accordionExample">
+                          <div className="accordion-item">
+                            <h4 className="accordion-header" id="headingOne">
+                              <button
+                                className="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne"
+                              >
+                                What does a product designer need to know?
+                                <span className="ms-auto">
+                                  <span className="icon ms-4">
+                                    <img
+                                      className="icon-plus"
+                                      src="assets/img/icons/plus.svg"
+                                      alt="plus"
+                                    />
+                                    <img
+                                      className="icon-minus d-none"
+                                      src="assets/img/icons/minus.svg"
+                                      alt="minus"
+                                    />
+                                  </span>
+                                </span>
+                              </button>
+                            </h4>
+                            <div
+                              id="collapseOne"
+                              className="accordion-collapse collapse show"
+                              aria-labelledby="headingOne"
+                              data-bs-parent="#accordionExample"
+                            >
+                              <div className="accordion-body">
+                                <p>
+                                  I'm here to help if you're searching for a
+                                  product designer to bring your idea to life or
+                                  a design partner to help take your business to
+                                  the next level.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="accordion-item">
+                            <h4 className="accordion-header" id="headingTwo">
+                              <button
+                                className="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="collapseTwo"
+                              >
+                                What does a product designer need to know?
+                                <span className="ms-auto">
+                                  <span className="icon ms-4">
+                                    <img
+                                      className="icon-plus"
+                                      src="assets/img/icons/plus.svg"
+                                      alt="plus"
+                                    />
+                                    <img
+                                      className="icon-minus d-none"
+                                      src="assets/img/icons/minus.svg"
+                                      alt="minus"
+                                    />
+                                  </span>
+                                </span>
+                              </button>
+                            </h4>
+                            <div
+                              id="collapseTwo"
+                              className="accordion-collapse collapse"
+                              aria-labelledby="headingTwo"
+                              data-bs-parent="#accordionExample"
+                            >
+                              <div className="accordion-body">
+                                <p>
+                                  I'm here to help if you're searching for a
+                                  product designer to bring your idea to life or
+                                  a design partner to help take your business to
+                                  the next level.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="accordion-item">
+                            <h4 className="accordion-header" id="headingThree">
+                              <button
+                                className="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree"
+                                aria-expanded="false"
+                                aria-controls="collapseThree"
+                              >
+                                What does a product designer need to know?
+                                <span className="ms-auto">
+                                  <span className="icon ms-4">
+                                    <img
+                                      className="icon-plus"
+                                      src="assets/img/icons/plus.svg"
+                                      alt="plus"
+                                    />
+                                    <img
+                                      className="icon-minus d-none"
+                                      src="assets/img/icons/minus.svg"
+                                      alt="minus"
+                                    />
+                                  </span>
+                                </span>
+                              </button>
+                            </h4>
+                            <div
+                              id="collapseThree"
+                              className="accordion-collapse collapse"
+                              aria-labelledby="headingThree"
+                              data-bs-parent="#accordionExample"
+                            >
+                              <div className="accordion-body">
+                                <p>
+                                  I'm here to help if you're searching for a
+                                  product designer to bring your idea to life or
+                                  a design partner to help take your business to
+                                  the next level.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="accordion-item">
+                            <h4 className="accordion-header" id="headingFour">
+                              <button
+                                className="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour"
+                                aria-expanded="false"
+                                aria-controls="collapseFour"
+                              >
+                                What does a product designer need to know?
+                                <span className="ms-auto">
+                                  <span className="icon ms-4">
+                                    <img
+                                      className="icon-plus"
+                                      src="assets/img/icons/plus.svg"
+                                      alt="plus"
+                                    />
+                                    <img
+                                      className="icon-minus d-none"
+                                      src="assets/img/icons/minus.svg"
+                                      alt="minus"
+                                    />
+                                  </span>
+                                </span>
+                              </button>
+                            </h4>
+                            <div
+                              id="collapseFour"
+                              className="accordion-collapse collapse"
+                              aria-labelledby="headingFour"
+                              data-bs-parent="#accordionExample"
+                            >
+                              <div className="accordion-body">
+                                <p>
+                                  I'm here to help if you're searching for a
+                                  product designer to bring your idea to life or
+                                  a design partner to help take your business to
+                                  the next level.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="accordion-item">
+                            <h4 className="accordion-header" id="headingFive">
+                              <button
+                                className="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive"
+                                aria-expanded="false"
+                                aria-controls="collapseFive"
+                              >
+                                What does a product designer need to know?
+                                <span className="ms-auto">
+                                  <span className="icon ms-4">
+                                    <img
+                                      className="icon-plus"
+                                      src="assets/img/icons/plus.svg"
+                                      alt="plus"
+                                    />
+                                    <img
+                                      className="icon-minus d-none"
+                                      src="assets/img/icons/minus.svg"
+                                      alt="minus"
+                                    />
+                                  </span>
+                                </span>
+                              </button>
+                            </h4>
+                            <div
+                              id="collapseFive"
+                              className="accordion-collapse collapse"
+                              aria-labelledby="headingFive"
+                              data-bs-parent="#accordionExample"
+                            >
+                              <div className="accordion-body">
+                                <p>
+                                  I'm here to help if you're searching for a
+                                  product designer to bring your idea to life or
+                                  a design partner to help take your business to
+                                  the next level.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="work-together-slider">
+                      <div className="slider-main d-flex gap-4 align-items-center">
+                        <div className="slider-item">
+                          <a href="contact.html">Let's 👋 Work Together</a>
+                          <a href="contact.html">Let's 👋 Work Together</a>
+                        </div>
+                        <div className="slider-item">
+                          <a href="contact.html">Let's 👋 Work Together</a>
+                          <a href="contact.html">Let's 👋 Work Together</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* <!-- background shape area start --> */}
+        <div className="background-shapes">
+          <div className="shape-1 common-shape">
+            <img src="assets/img/bg/banner-shape-1.png" alt="banner-shape-1" />
+          </div>
+          <div className="shape-2 common-shape">
+            <img src="assets/img/bg/banner-shape-1.png" alt="banner-shape-1" />
+          </div>
+          <div className="threed-shape-1 move-with-cursor" data-value="1">
+            <img src="assets/img/bg/object-3d-1.png" alt="object-3d-1" />
+          </div>
+          <div className="threed-shape-2 move-with-cursor" data-value="1">
+            <img src="assets/img/bg/object-3d-2.png" alt="object-3d-2" />
+          </div>
+        </div>
+        {/* <!-- background shape area end --> */}
+      </main>
+      <footer />
     </div>
   );
 };
 
-export default Home;
+export default Services;
