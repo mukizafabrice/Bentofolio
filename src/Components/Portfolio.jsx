@@ -841,7 +841,6 @@ const Home = () => {
         </div>
         {/* <!-- background shape area end --> */}
       </main>
-      <Footer />
     </div>
   );
 };
