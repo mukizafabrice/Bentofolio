@@ -150,8 +150,8 @@ const Home = () => {
                       <span>Home</span>
                     </Link>
                   </li>
-                  <li className="nav-item active">
-                    <Link to="/about" className="nav-link">
+                  <li className="nav-item">
+                    <Link to="/about" className="nav-link active">
                       <svg
                         className="nav-icon"
                         viewBox="0 0 18 18"
@@ -181,7 +181,7 @@ const Home = () => {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/services" className="nav-link active">
+                    <Link to="/services" className="nav-link">
                       <svg
                         className="nav-icon"
                         viewBox="0 0 16 16"

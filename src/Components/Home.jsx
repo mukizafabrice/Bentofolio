@@ -368,7 +368,7 @@ const Home = () => {
                       </small>
                     </span>
                   </button>
-                  <a href="contact.html" className="lets-talk-btn">
+                  <Link to="/contact" className="lets-talk-btn">
                     Let's Talk
                     <svg
                       className="icon"
@@ -393,7 +393,7 @@ const Home = () => {
                         stroke-linejoin="round"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="mobile-menu-overlay d-block d-lg-none"></div>

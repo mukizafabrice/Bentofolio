@@ -364,7 +364,7 @@ const Home = () => {
                       </small>
                     </span>
                   </button>
-                  <a href="contact.html" className="lets-talk-btn">
+                  <Link to="/contact" className="lets-talk-btn">
                     Let's Talk
                     <svg
                       className="icon"
@@ -389,7 +389,7 @@ const Home = () => {
                         stroke-linejoin="round"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="mobile-menu-overlay d-block d-lg-none"></div>
@@ -402,7 +402,502 @@ const Home = () => {
           </div>
         </nav>
       </header>
-      <Footer />
+
+      {/* <!-- main area part start --> */}
+      <main>
+        <section className="content-box-area mt-4">
+          <div className="container">
+            <div className="row g-4">
+              <div className="col-xl-4">
+                <div className="card profile-card">
+                  <div className="card-body">
+                    <div className="image text-center">
+                      <img src="assets/img/images/profile.png" alt="profile" />
+                    </div>
+                    <div className="text">
+                      <h3 className="card-title">Cris Rayaan 👋</h3>
+                      <p>
+                        A Passionate <span>Full Stack Developer</span> 🖥️ &{" "}
+                        <span>Product Designer</span> having
+                        <span>12 years</span> of Experiences over 24+ Country
+                        Worldwide.
+                      </p>
+                      <div className="common-button-groups">
+                        <a className="btn btn-call" href="#">
+                          <svg
+                            className="icon"
+                            width="25"
+                            height="24"
+                            viewBox="0 0 25 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.5 4H9.5L11.5 9L9 10.5C10.071 12.6715 11.8285 14.429 14 15.5L15.5 13L20.5 15V19C20.5 19.5304 20.2893 20.0391 19.9142 20.4142C19.5391 20.7893 19.0304 21 18.5 21C14.5993 20.763 10.9202 19.1065 8.15683 16.3432C5.3935 13.5798 3.73705 9.90074 3.5 6C3.5 5.46957 3.71071 4.96086 4.08579 4.58579C4.46086 4.21071 4.96957 4 5.5 4Z"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.5 7C16.0304 7 16.5391 7.21071 16.9142 7.58579C17.2893 7.96086 17.5 8.46957 17.5 9"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.5 3C17.0913 3 18.6174 3.63214 19.7426 4.75736C20.8679 5.88258 21.5 7.4087 21.5 9"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          Book A call
+                        </a>
+                        <button
+                          className="btn btn-copy"
+                          data-clipboard-text="example@example.com"
+                        >
+                          <svg
+                            className="icon"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8 10C8 9.46957 8.21071 8.96086 8.58579 8.58579C8.96086 8.21071 9.46957 8 10 8H18C18.5304 8 19.0391 8.21071 19.4142 8.58579C19.7893 8.96086 20 9.46957 20 10V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H10C9.46957 20 8.96086 19.7893 8.58579 19.4142C8.21071 19.0391 8 18.5304 8 18V10Z"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M16 8V6C16 5.46957 15.7893 4.96086 15.4142 4.58579C15.0391 4.21071 14.5304 4 14 4H6C5.46957 4 4.96086 4.21071 4.58579 4.58579C4.21071 4.96086 4 5.46957 4 6V14C4 14.5304 4.21071 15.0391 4.58579 15.4142C4.96086 15.7893 5.46957 16 6 16H8"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          Copy Email
+                        </button>
+                      </div>
+                      <div className="social-media-icon">
+                        <ul className="list-unstyled">
+                          <li>
+                            <a href="#">
+                              <i className="fab fa-facebook"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i className="fab fa-pinterest"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i className="fab fa-github"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i className="fab fa-youtube"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-8">
+                <div className="card content-box-card">
+                  <div className="card-body portfolio-card contact-card">
+                    <div className="top-info">
+                      <div className="text">
+                        <h1 className="main-title">
+                          Let's 👋 <span>Work</span> Together
+                        </h1>
+                        <p>
+                          I'm here to help if you're searching for a product
+                          designer to bring your idea to life or a design
+                          partner to help take your business to the next level.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="contact-area">
+                      <div className="leave-comments-area">
+                        <div className="comments-box">
+                          <form
+                            id="contact-form"
+                            action="assets/mail.php"
+                            method="POST"
+                          >
+                            <div className="row gx-3">
+                              <div className="col-md-6">
+                                <div className="mb-4">
+                                  <label className="form-label">Name</label>
+                                  <input
+                                    name="name"
+                                    required
+                                    type="text"
+                                    className="form-control shadow-none"
+                                    placeholder="Enter your name"
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-md-6">
+                                <div className="mb-4">
+                                  <label className="form-label">Email</label>
+                                  <input
+                                    nameName="email"
+                                    required
+                                    type="email"
+                                    className="form-control shadow-none"
+                                    placeholder="Enter your email"
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-md-6">
+                                <div className="mb-4">
+                                  <label className="form-label">Subject</label>
+                                  <input
+                                    name="subject"
+                                    required
+                                    type="text"
+                                    className="form-control shadow-none"
+                                    placeholder="Subject"
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-md-6">
+                                <div className="mb-4">
+                                  <label className="form-label">Budget</label>
+                                  <select
+                                    name="budget"
+                                    required
+                                    className="form-select shadow-none"
+                                  >
+                                    <option disabled selected>
+                                      Select budget...
+                                    </option>
+                                    <option value="$5000">$5000</option>
+                                    <option value="$5000 - $1000">
+                                      $5000 - $10000
+                                    </option>
+                                    <option value="$10000 - $2000">
+                                      $10000 - $20000
+                                    </option>
+                                    <option value="$20000">$20000+</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div className="col-md-12">
+                                <div className="mb-4">
+                                  <label className="form-label">Comment</label>
+                                  <textarea
+                                    name="message"
+                                    className="form-control shadow-none"
+                                    rows="4"
+                                    placeholder="Type details about your inquiry"
+                                  ></textarea>
+                                </div>
+                              </div>
+                              <div className="col-md-12">
+                                <button className="submit-btn" type="submit">
+                                  Send Message
+                                  <svg
+                                    className="icon"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M17.5 11.6665V6.6665H12.5"
+                                      stroke="white"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    ></path>
+                                    <path
+                                      d="M17.5 6.6665L10 14.1665L2.5 6.6665"
+                                      stroke="white"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    ></path>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                          <p className="ajax-response mb-0"></p>
+                        </div>
+                      </div>
+                      <div className="contact-map-area">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25280012016!2d-74.14448732737499!3d40.69763123331177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1711832776336!5m2!1sen!2sbd"
+                          allowfullscreen=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                      </div>
+                      <div className="frequently-asked-questions">
+                        <h2 className="main-common-title">
+                          Frequently Asked Questions
+                        </h2>
+                        <div className="frequently-asked-questions-main">
+                          <div className="accordion" id="accordionExample">
+                            <div className="accordion-item">
+                              <h4 className="accordion-header" id="headingOne">
+                                <button
+                                  className="accordion-button"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseOne"
+                                  aria-expanded="true"
+                                  aria-controls="collapseOne"
+                                >
+                                  What does a product designer need to know?
+                                  <span className="ms-auto">
+                                    <span className="icon ms-4">
+                                      <img
+                                        className="icon-plus"
+                                        src="assets/img/icons/plus.svg"
+                                        alt="plus"
+                                      />
+                                      <img
+                                        className="icon-minus d-none"
+                                        src="assets/img/icons/minus.svg"
+                                        alt="minus"
+                                      />
+                                    </span>
+                                  </span>
+                                </button>
+                              </h4>
+                              <div
+                                id="collapseOne"
+                                className="accordion-collapse collapse show"
+                                aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample"
+                              >
+                                <div className="accordion-body">
+                                  <p>
+                                    I'm here to help if you're searching for a
+                                    product designer to bring your idea to life
+                                    or a design partner to help take your
+                                    business to the next level.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="accordion-item">
+                              <h4 className="accordion-header" id="headingTwo">
+                                <button
+                                  className="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseTwo"
+                                  aria-expanded="false"
+                                  aria-controls="collapseTwo"
+                                >
+                                  What does a product designer need to know?
+                                  <span className="ms-auto">
+                                    <span className="icon ms-4">
+                                      <img
+                                        className="icon-plus"
+                                        src="assets/img/icons/plus.svg"
+                                        alt="plus"
+                                      />
+                                      <img
+                                        className="icon-minus d-none"
+                                        src="assets/img/icons/minus.svg"
+                                        alt="minus"
+                                      />
+                                    </span>
+                                  </span>
+                                </button>
+                              </h4>
+                              <div
+                                id="collapseTwo"
+                                className="accordion-collapse collapse"
+                                aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample"
+                              >
+                                <div className="accordion-body">
+                                  <p>
+                                    I'm here to help if you're searching for a
+                                    product designer to bring your idea to life
+                                    or a design partner to help take your
+                                    business to the next level.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="accordion-item">
+                              <h4
+                                className="accordion-header"
+                                id="headingThree"
+                              >
+                                <button
+                                  className="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseThree"
+                                  aria-expanded="false"
+                                  aria-controls="collapseThree"
+                                >
+                                  What does a product designer need to know?
+                                  <span className="ms-auto">
+                                    <span className="icon ms-4">
+                                      <img
+                                        className="icon-plus"
+                                        src="assets/img/icons/plus.svg"
+                                        alt="plus"
+                                      />
+                                      <img
+                                        className="icon-minus d-none"
+                                        src="assets/img/icons/minus.svg"
+                                        alt="minus"
+                                      />
+                                    </span>
+                                  </span>
+                                </button>
+                              </h4>
+                              <div
+                                id="collapseThree"
+                                className="accordion-collapse collapse"
+                                aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample"
+                              >
+                                <div className="accordion-body">
+                                  <p>
+                                    I'm here to help if you're searching for a
+                                    product designer to bring your idea to life
+                                    or a design partner to help take your
+                                    business to the next level.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="accordion-item">
+                              <h4 className="accordion-header" id="headingFour">
+                                <button
+                                  className="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseFour"
+                                  aria-expanded="false"
+                                  aria-controls="collapseFour"
+                                >
+                                  What does a product designer need to know?
+                                  <span className="ms-auto">
+                                    <span className="icon ms-4">
+                                      <img
+                                        className="icon-plus"
+                                        src="assets/img/icons/plus.svg"
+                                        alt="plus"
+                                      />
+                                      <img
+                                        className="icon-minus d-none"
+                                        src="assets/img/icons/minus.svg"
+                                        alt="minus"
+                                      />
+                                    </span>
+                                  </span>
+                                </button>
+                              </h4>
+                              <div
+                                id="collapseFour"
+                                className="accordion-collapse collapse"
+                                aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample"
+                              >
+                                <div className="accordion-body">
+                                  <p>
+                                    I'm here to help if you're searching for a
+                                    product designer to bring your idea to life
+                                    or a design partner to help take your
+                                    business to the next level.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="accordion-item">
+                              <h4 className="accordion-header" id="headingFive">
+                                <button
+                                  className="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseFive"
+                                  aria-expanded="false"
+                                  aria-controls="collapseFive"
+                                >
+                                  What does a product designer need to know?
+                                  <span className="ms-auto">
+                                    <span className="icon ms-4">
+                                      <img
+                                        className="icon-plus"
+                                        src="assets/img/icons/plus.svg"
+                                        alt="plus"
+                                      />
+                                      <img
+                                        className="icon-minus d-none"
+                                        src="assets/img/icons/minus.svg"
+                                        alt="minus"
+                                      />
+                                    </span>
+                                  </span>
+                                </button>
+                              </h4>
+                              <div
+                                id="collapseFive"
+                                className="accordion-collapse collapse"
+                                aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample"
+                              >
+                                <div className="accordion-body">
+                                  <p>
+                                    I'm here to help if you're searching for a
+                                    product designer to bring your idea to life
+                                    or a design partner to help take your
+                                    business to the next level.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* <!-- background shape area start --> */}
+        <div className="background-shapes">
+          <div className="shape-1 common-shape">
+            <img src="assets/img/bg/banner-shape-1.png" alt="banner-shape-1" />
+          </div>
+          <div className="shape-2 common-shape">
+            <img src="assets/img/bg/banner-shape-1.png" alt="banner-shape-1" />
+          </div>
+          <div className="threed-shape-1 move-with-cursor" data-value="1">
+            <img src="assets/img/bg/object-3d-1.png" alt="object-3d-1" />
+          </div>
+          <div className="threed-shape-2 move-with-cursor" data-value="1">
+            <img src="assets/img/bg/object-3d-2.png" alt="object-3d-2" />
+          </div>
+        </div>
+        {/* <!-- background shape area end --> */}
+      </main>
     </div>
   );
 };
