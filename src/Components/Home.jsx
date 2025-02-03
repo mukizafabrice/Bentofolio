@@ -215,7 +215,7 @@ const Home = () => {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/work">
+                    <Link className="nav-link" to="/portfolio">
                       <svg
                         className="nav-icon"
                         viewBox="0 0 18 17"
