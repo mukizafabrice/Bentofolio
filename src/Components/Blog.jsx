@@ -389,7 +389,7 @@ const Home = () => {
                         stroke-linejoin="round"
                       />
                     </svg>
-                    </Link>
+                  </Link>
                 </div>
               </div>
               <div className="mobile-menu-overlay d-block d-lg-none"></div>
@@ -677,19 +677,16 @@ const Home = () => {
                           <div className="col-xl-6 col-lg-4 col-md-6">
                             <div className="article-publications-item">
                               <div className="image">
-                                <a
-                                  href="article.html"
-                                  className="d-block w-100"
-                                >
+                                <Link to="/article" className="d-block w-100">
                                   <img
                                     src="assets/img/blog/blog-img-6.jpg"
                                     alt="blog-img-6"
                                     className="img-fluid w-100"
                                   />
-                                </a>
-                                <a href="article.html" className="tags">
+                                </Link>
+                                <Link to="/article" className="tags">
                                   Development
-                                </a>
+                                </Link>
                               </div>
                               <div className="text">
                                 <a href="article.html" className="title">

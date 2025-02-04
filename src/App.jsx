@@ -11,7 +11,7 @@ import Blog from "./Components/Blog";
 import Footer from "./Components/Footer";
 import Portfolio from "./Components/Portfolio";
 import PortfolioDetails from "./Components/PortfolioDetails";
-
+import Article from "./Components/Article";
 function App() {
   return (
     <BrowserRouter>
@@ -25,6 +25,7 @@ function App() {
         <Route path="/footer" element={<Footer />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/portfolio-details" element={<PortfolioDetails />} />
+        <Route path="/article" element={<Article />} />
       </Routes>
     </BrowserRouter>
   );
