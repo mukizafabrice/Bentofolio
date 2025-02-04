@@ -697,7 +697,7 @@ const Home = () => {
                                 </p>
                               </div>
                               <div className="visite-btn">
-                                <a href="portfolio-details.html">
+                                <Link to="/portfolio-details">
                                   Visit Site
                                   <svg
                                     className="arrow-up"
@@ -718,7 +718,7 @@ const Home = () => {
                                       stroke-linejoin="round"
                                     ></path>
                                   </svg>
-                                </a>
+                                </L>
                               </div>
                             </div>
                           </div>
