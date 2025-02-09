@@ -718,7 +718,7 @@ const Home = () => {
                                       stroke-linejoin="round"
                                     ></path>
                                   </svg>
-                                </L>
+                                </Link>
                               </div>
                             </div>
                           </div>
