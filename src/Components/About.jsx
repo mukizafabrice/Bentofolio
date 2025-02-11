@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import ClipboardJS from "clipboard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-
+import Profile from "./assets/img/images/image.png";
+import Project1 from "./assets/img/projects/project-1.png";
 import Slider from "react-slick";
 import "./css/style.css";
 import "./css/responsive.css";
@@ -411,14 +412,14 @@ const Home = () => {
                 <div className="card profile-card">
                   <div className="card-body">
                     <div className="image text-center">
-                      <img src="assets/img/images/profile.png" alt="profile" />
+                      <img src={Profile} alt="profile" />
                     </div>
                     <div className="text">
-                      <h3 className="card-title">Cris Rayaan 👋</h3>
+                      <h3 className="card-title">Fabrice Nshimyumukiza 👋</h3>
                       <p>
                         A Passionate <span>Full Stack Developer</span> 🖥️ &{" "}
                         <span>Product Designer</span> having
-                        <span>12 years</span> of Experiences over 24+ Country
+                        <span>4 years</span> of Experiences over 24+ Country
                         Worldwide.
                       </p>
                       <div className="common-button-groups">
@@ -457,7 +458,7 @@ const Home = () => {
                         </a>
                         <button
                           className="btn btn-copy"
-                          data-clipboard-text="example@example.com"
+                          data-clipboard-text="mukizafabrice18@gmail.com"
                         >
                           <svg
                             className="icon"
@@ -517,12 +518,12 @@ const Home = () => {
                     <div className="top-info">
                       <div className="text">
                         <h1 className="main-title">
-                          Hi, This Is <span>Cris Rayaan</span> 👋
+                          Hi, This Is <span>Fabrice Nshimyumukiza</span> 👋
                         </h1>
                         <p>
                           A Passionate <b>Full Stack Developer</b> 🖥️ &{" "}
                           <b>Product Designer</b> having
-                          <b>12 years</b> of Experiences over 24+ Country
+                          <b>4 years</b> of Experiences over 24+ Country
                           Worldwide.{" "}
                         </p>
                       </div>
