@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ClipboardJS from "clipboard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-
+import Profile from "./assets/img/images/image.png";
 import Slider from "react-slick";
 import "./css/style.css";
 import "./css/responsive.css";
@@ -411,14 +411,14 @@ const Services = () => {
                 <div className="card profile-card">
                   <div className="card-body">
                     <div className="image text-center">
-                      <img src="assets/img/images/profile.png" alt="profile" />
+                      <img src={Profile} alt="profile" />
                     </div>
                     <div className="text">
-                      <h3 className="card-title">Cris Rayaan 👋</h3>
+                      <h3 className="card-title">Fabrice Nshimyumukiza 👋</h3>
                       <p>
                         A Passionate <span>Full Stack Developer</span> 🖥️ &{" "}
                         <span>Product Designer</span> having
-                        <span>12 years</span> of Experiences over 24+ Country
+                        <span>4 years</span> of Experiences over 24+ Country
                         Worldwide.
                       </p>
                       <div className="common-button-groups">
