@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ClipboardJS from "clipboard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-
+import Profile from "./assets/img/images/image.png";
 import Slider from "react-slick";
 import "./css/style.css";
 import "./css/responsive.css";
@@ -411,14 +411,14 @@ const Home = () => {
                 <div className="card profile-card">
                   <div className="card-body">
                     <div className="image text-center">
-                      <img src="assets/img/images/profile.png" alt="profile" />
+                      <img src={Profile} alt="profile" />
                     </div>
                     <div className="text">
-                      <h3 className="card-title">Cris Rayaan 👋</h3>
+                      <h3 className="card-title">Fabrice Nshimyumukiza 👋</h3>
                       <p>
                         A Passionate <span>Full Stack Developer</span> 🖥️ &{" "}
                         <span>Product Designer</span> having
-                        <span>12 years</span> of Experiences over 24+ Country
+                        <span> 4 years</span> of Experiences over 24+ Country
                         Worldwide.
                       </p>
                       <div className="common-button-groups">
@@ -457,7 +457,7 @@ const Home = () => {
                         </a>
                         <button
                           className="btn btn-copy"
-                          data-clipboard-text="example@example.com"
+                          data-clipboard-text="mukizafabrice18@gmail.com"
                         >
                           <svg
                             className="icon"
@@ -486,23 +486,23 @@ const Home = () => {
                       <div className="social-media-icon">
                         <ul className="list-unstyled">
                           <li>
-                            <a href="#">
-                              <i className="fab fa-facebook"></i>
+                            <a href="www.linkedin.com/in/nshimyumukiza-fabrice-b55751256">
+                              <i className="fab fa-linkedin"></i>
                             </a>
                           </li>
                           <li>
-                            <a href="#">
-                              <i className="fab fa-pinterest"></i>
+                            <a href="https://www.instagram.com/fabr1ce_r/">
+                              <i className="fab fa-instagram"></i>
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href="https://github.com/mukizafabrice">
                               <i className="fab fa-github"></i>
                             </a>
                           </li>
                           <li>
-                            <a href="#">
-                              <i className="fab fa-youtube"></i>
+                            <a href="https://twitter.com/FabriceNshimyu1">
+                              <i className="fab fa-twitter"></i>
                             </a>
                           </li>
                         </ul>
