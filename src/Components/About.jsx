@@ -10,6 +10,7 @@ import "./css/style.css";
 import "./css/responsive.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from "./Footer";
 
 const Home = () => {
   useEffect(() => {
@@ -1249,7 +1250,7 @@ const Home = () => {
           </div>
         </div>
       </main>
-      <footer />
+      <Footer />
     </div>
   );
 };

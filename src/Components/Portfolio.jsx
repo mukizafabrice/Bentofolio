@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Profile from "./assets/img/images/image.png";
 import Project1 from "./assets/img/projects/project-1.png";
-
+import Footer from "./Footer";
 const Home = () => {
   useEffect(() => {
     const isDarkMode = localStorage.getItem("darkMode") === "true";
@@ -841,6 +841,7 @@ const Home = () => {
           </div>
         </div>
         {/* <!-- background shape area end --> */}
+        <Footer />
       </main>
     </div>
   );

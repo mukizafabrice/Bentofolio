@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ClipboardJS from "clipboard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-
+import Footer from "./Footer";
 import Slider from "react-slick";
 import "./css/style.css";
 import "./css/responsive.css";
@@ -801,6 +801,7 @@ const Home = () => {
         </div>
         {/* <!-- background shape area end --> */}
       </main>
+      <Footer />
     </div>
   );
 };
